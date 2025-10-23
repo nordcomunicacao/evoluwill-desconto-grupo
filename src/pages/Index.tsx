@@ -7,9 +7,6 @@ const WhatsAppIcon = () => (
   </svg>
 );
 const Index = () => {
-  const handleWhatsAppClick = () => {
-    window.open("https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI", "_blank");
-  };
   return <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <div className="max-w-md w-full text-center space-y-8">
         {/* Profile Image */}
@@ -36,15 +33,16 @@ const Index = () => {
 
         {/* WhatsApp Button */}
         <div className="pt-4">
-          <Button 
-            onClick={handleWhatsAppClick} 
-            size="lg" 
-            className="w-full bg-gradient-to-r from-[#1BD741] via-[#25D366] to-[#1BD741] bg-[length:200%_100%] hover:bg-[position:100%_0] text-white font-bold text-lg py-8 rounded-2xl shadow-[0_0_30px_rgba(37,211,102,0.5)] hover:shadow-[0_0_50px_rgba(37,211,102,0.8)] animate-pulse-slow transition-all duration-500 hover:scale-[1.02] active:scale-95 relative overflow-hidden group"
+          <a 
+            href="https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#1BD741] via-[#25D366] to-[#1BD741] bg-[length:200%_100%] hover:bg-[position:100%_0] text-white font-bold text-lg py-8 rounded-2xl shadow-[0_0_30px_rgba(37,211,102,0.5)] hover:shadow-[0_0_50px_rgba(37,211,102,0.8)] animate-pulse-slow transition-all duration-500 hover:scale-[1.02] active:scale-95 relative overflow-hidden group"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
             <WhatsAppIcon />
             <span className="ml-3">Entrar no grupo</span>
-          </Button>
+          </a>
         </div>
 
         {/* Footer Text */}
