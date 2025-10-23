@@ -40,7 +40,7 @@ function achados_evoluwill_customize_register($wp_customize) {
   
   // Link do grupo WhatsApp
   $wp_customize->add_setting('whatsapp_group_link', array(
-    'default' => 'https://chat.whatsapp.com/SEU_LINK_AQUI',
+    'default' => 'https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI',
     'sanitize_callback' => 'esc_url_raw',
   ));
   

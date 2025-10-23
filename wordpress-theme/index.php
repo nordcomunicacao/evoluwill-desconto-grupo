@@ -24,7 +24,7 @@ get_header(); ?>
 
   <div class="whatsapp-button-wrapper">
     <a 
-      href="<?php echo esc_url(get_theme_mod('whatsapp_group_link', 'https://chat.whatsapp.com/SEU_LINK_AQUI')); ?>" 
+      href="<?php echo esc_url(get_theme_mod('whatsapp_group_link', 'https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI')); ?>" 
       target="_blank" 
       rel="noopener noreferrer" 
       class="whatsapp-button"

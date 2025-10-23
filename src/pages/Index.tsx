@@ -8,8 +8,7 @@ const WhatsAppIcon = () => (
 );
 const Index = () => {
   const handleWhatsAppClick = () => {
-    // Substitua pelo link real do grupo de WhatsApp
-    window.open("https://chat.whatsapp.com/seu-link-aqui", "_blank");
+    window.open("https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI", "_blank");
   };
   return <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <div className="max-w-md w-full text-center space-y-8">
