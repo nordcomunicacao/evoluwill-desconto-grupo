@@ -35,7 +35,7 @@ const Index = () => {
         <div className="pt-4">
           <a 
             href="https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI"
-            target="_blank"
+            target="_top"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#1BD741] via-[#25D366] to-[#1BD741] bg-[length:200%_100%] hover:bg-[position:100%_0] text-white font-bold text-lg py-8 rounded-2xl shadow-[0_0_30px_rgba(37,211,102,0.5)] hover:shadow-[0_0_50px_rgba(37,211,102,0.8)] animate-pulse-slow transition-all duration-500 hover:scale-[1.02] active:scale-95 relative overflow-hidden group"
           >
