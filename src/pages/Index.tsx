@@ -40,9 +40,9 @@ const Index = () => {
           <Button 
             onClick={handleWhatsAppClick} 
             size="lg" 
-            className="w-full bg-whatsapp hover:bg-whatsapp-dark text-white font-bold text-lg py-8 rounded-2xl shadow-[0_0_30px_rgba(37,211,102,0.5)] hover:shadow-[0_0_50px_rgba(37,211,102,0.8)] animate-pulse-slow transition-all duration-300 hover:scale-[1.02] active:scale-95 relative overflow-hidden group"
+            className="w-full bg-gradient-to-r from-[#1BD741] via-[#25D366] to-[#1BD741] bg-[length:200%_100%] hover:bg-[position:100%_0] text-white font-bold text-lg py-8 rounded-2xl shadow-[0_0_30px_rgba(37,211,102,0.5)] hover:shadow-[0_0_50px_rgba(37,211,102,0.8)] animate-pulse-slow transition-all duration-500 hover:scale-[1.02] active:scale-95 relative overflow-hidden group"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-whatsapp/0 via-white/20 to-whatsapp/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
+            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></span>
             <WhatsAppIcon />
             <span className="ml-3">Entrar no grupo</span>
           </Button>
