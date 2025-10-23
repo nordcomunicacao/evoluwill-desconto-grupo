@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/willian-profile.jpeg";
+import { toast } from "@/components/ui/use-toast";
 
 const WhatsAppIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -7,6 +8,7 @@ const WhatsAppIcon = () => (
   </svg>
 );
 const Index = () => {
+  const inviteLink = "https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI";
   return <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <div className="max-w-md w-full text-center space-y-8">
         {/* Profile Image */}
@@ -34,8 +36,8 @@ const Index = () => {
         {/* WhatsApp Button */}
         <div className="pt-4">
           <a 
-            href="https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI"
-            target="_top"
+            href={inviteLink}
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#1BD741] via-[#25D366] to-[#1BD741] bg-[length:200%_100%] hover:bg-[position:100%_0] text-white font-bold text-lg py-8 rounded-2xl shadow-[0_0_30px_rgba(37,211,102,0.5)] hover:shadow-[0_0_50px_rgba(37,211,102,0.8)] animate-pulse-slow transition-all duration-500 hover:scale-[1.02] active:scale-95 relative overflow-hidden group"
           >
@@ -43,6 +45,20 @@ const Index = () => {
             <WhatsAppIcon />
             <span className="ml-3">Entrar no grupo</span>
           </a>
+          <div className="mt-3 text-sm text-muted-foreground">
+            Se o botão estiver bloqueado no preview, 
+            <a href={inviteLink} target="_blank" rel="noopener noreferrer" className="underline">abra em nova aba</a>
+            {" "}ou{" "}
+            <button
+              className="underline"
+              onClick={() => {
+                navigator.clipboard.writeText(inviteLink);
+                toast({ title: "Link copiado", description: "Cole em uma nova aba do navegador." });
+              }}
+            >
+              copie o link
+            </button>.
+          </div>
         </div>
 
         {/* Footer Text */}
