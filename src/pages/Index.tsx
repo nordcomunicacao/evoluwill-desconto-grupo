@@ -8,7 +8,7 @@ const WhatsAppIcon = () => (
   </svg>
 );
 const Index = () => {
-  const inviteLink = "https://chat.whatsapp.com/Bhj7tQH5Kt8KP3gcNdmeQI";
+  const inviteLink = "https://chat.whatsapp.com/GWi3Y7PkoYO4LTolwo2JxG?mode=hqrt1";
   return <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <div className="max-w-md w-full text-center space-y-8">
         {/* Profile Image */}
